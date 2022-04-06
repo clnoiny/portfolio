@@ -8,7 +8,14 @@
     -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Roxy by GetTemplates.co</title>
+    <meta content="images/photo-2.jpg" property="og:image"><!--카톡 링크 이미지-->
+    <meta content="최나연 포트폴리오" property="og:title"> <!--카톡 링크 제목-->
+    <meta content="최나연의 웹디자인 포트폴리오 사이트입니다 :)" property="og:description"><!--카톡 링크 설명-->
+    <meta content="https://clnoiny.github.io/portfolio/" property="og:url">
+    <meta content="keywords" content="웹디자인, 포트폴리오, 배너제작, 디자인, 웹사이트, 이력서"> <!--검색했을 때 나타나는 키워드-->
+
+    <title>최나연 포트폴리오</title>
+
     <meta name="description" content="Roxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,14 +24,14 @@
     <link rel="stylesheet" href="vendor/select2/select2.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="js/unpkg.aos.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/icon-font.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
@@ -35,7 +42,8 @@
 	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center text-white" href="/">
-            <h3 class="font-weight-bolder mb-0">ROXY</h3>
+            <!--<h3 class="font-weight-bolder mb-0">ROXY</h3>-->
+            <img src="img/nav-logo.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
@@ -103,7 +111,11 @@
 	
 </div>	<div class="jumbotron d-flex align-items-center">
   <div class="container text-center">
-    <h1 class="display-1 mb-4">RO<br>XY</h1>
+    <h1 class="display-1 mb-4 logo1">Na<br>Yeon<br>Choi.</h1>
+  </div>
+  <!--도형 요소들이 있던 자리에 그라데이션 원 삽입했습니다.-->
+  <div class="triangle triangle-2">
+      <img src="img/ny-circle.png" alt="">
   </div>
   <!-- 움직이는 도형요소들입니다 <div class="rectangle-1"></div>
   <div class="rectangle-2"></div>
@@ -136,11 +148,11 @@
                     <div class="row align-items-center">
 
                         <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
-                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
+                            <img class="my-5" src="img/profile-pic.jpg" alt="">
                         </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
 
                         <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
-                            <h4 class="mb-4">Capture every moments and share it to all your friends</h4>
+                            <h4 class="mb-4-1">다양한 색과 생각들을 담은 사람,<br>최나연입니다.</h4>
                             <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
                             <!--<div class="progress mb-3">
                                 <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML5 95%</div>
@@ -161,14 +173,14 @@
 </section>	<!-- 프로필 끝 -->
 
 <!--나의 포부 시작-->
-<section id="testimonial" class="section-padding bg-fixed bg-white overlay" style="background-image: url(img/bg-white.jpg);">
+<section id="testimonial" class="section-padding bg-fixed bg-white" style="background-image: url(img/back-circle.png);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
-            <div class="heading-section text-center">
+            <!--<div class="heading-section text-center">
                 <h2>
                     User Testimonials
                 </h2>
-            </div>
+            </div>-->
             <div class="row">
                 <!-- Testimonial -->
                 <div class="testi-content testi-carousel owl-carousel">
@@ -226,9 +238,9 @@
             <!-- Section Title -->
             <div class="title-wrap mb-5" data-aos="fade-up">
                 <h2 class="section-title">
-                    A template built by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>
+                    저는 이런 툴들을 활용할 수 있어요 :)
                 </h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
+                <!--<p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>-->
             </div>
             <!-- End of Section Title -->
             <div class="row">
@@ -239,17 +251,19 @@
                         <div class="col-md-4 col-sm-12 text-center mt-4">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-cog fs-40"></i>
+                                    <img src="img/ps-ic.png" alt="포토샵 아이콘">
+                                    <!--<i class="lnr lnr-cog fs-40"></i>-->
                                 </div>
-                                <h4>Easy to Customize</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Adobe Photoshop</h4>
+                                <p>포토샵을 활용해 인물 보정, 사진 합성, 배너, 카드뉴스, 제품 상세페이지 제작 등을 수행해요.</p>
                             </div>
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-frame-contract fs-40"></i>
+                                    <img src="img/html-ic.png" alt="html, css 아이콘">
+                                    <!--<i class="lnr lnr-frame-contract fs-40"></i>-->
                                 </div>
-                                <h4>Pixel Perfect</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>HTML/CSS</h4>
+                                <p>HTML과 CSS를 이해하고 간단히 작성해낼 수 있어요.</p>
                             </div>
                         </div>
                         <!-- End of Feature Item -->
@@ -257,17 +271,19 @@
                         <div class="col-md-4 col-sm-12 text-center">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-bubble fs-40"></i>
+                                    <img src="img/illust-ic.png" alt="일러스트레이터 아이콘">
+                                    <!--<i class="lnr lnr-bubble fs-40"></i>-->
                                 </div>
-                                <h4>Full Support</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Adobe Illustrator</h4>
+                                <p>일러스트레이터를 활용해 간단한 캐릭터, 로고, 엽서 등을 제작할 수 있고 어도비 인디자인, 포토샵과 함께 활용해 포스터, 리플렛 등의 편집물을 제작할 수 있어요.</p>
                             </div>
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-magic-wand fs-40"></i>
+                                    <img src="img/js-ic.png" alt="자바스크립트 아이콘">
+                                    <!--<i class="lnr lnr-magic-wand fs-40"></i>-->
                                 </div>
-                                <h4>Clean Design</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Java script</h4>
+                                <p>Java script를 이해하고 간단히 작성해낼 수 있어요.</p>
                             </div>
                         </div>
                         <!-- End of Feature Item -->
@@ -275,17 +291,19 @@
                         <div class="col-md-4 col-sm-12 text-center mt-4">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-clock fs-40"></i>
+                                    <img src="img/xd-ic.png" alt="엑스디 아이콘">
+                                    <!--<i class="lnr lnr-clock fs-40"></i>-->
                                 </div>
-                                <h4>Ontime Project</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Adobe XD</h4>
+                                <p>XD를 활용해 제작할 웹페이지의 프로토콜을 제작, 디자인할 수 있어요.</p>
                             </div>
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-thumbs-up fs-40"></i>
+                                    <img src="img/cafe24-ic.png" alt="카페24 아이콘">
+                                    <!--<i class="lnr lnr-thumbs-up fs-40"></i>-->
                                 </div>
-                                <h4>Built with SASS</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Cafe24</h4>
+                                <p>카페24를 활용해 쇼핑몰 상품관리, 등록, 디자인 변경 등을 수행할 수 있어요.</p>
                             </div>
                         </div>
                         <!-- End of Feature Item -->
@@ -308,9 +326,9 @@
                     <div class="row align-items-center text-white">
 
                         <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
-                            <h4 class="mb-4">Capture every moments and share it to all your friendss</h4>
-                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
-                            <button type="button" class="btn btn-outline-primary">FEATURES</button>
+                            <h4 class="mb-4">사랑과 평화<br>어린이집<br>홈페이지</h4>
+                            <p>기존의 '기아대책' 사이트를 어린이집이라는 주제로 변경하여 리뉴얼, 재구성한 홈페이지입니다. 어린이집의 분위기가 잘 느껴질 수 있도록 노란색과 베이지색을 깔끔한 화이트와 함께 배색했습니다.</p>
+                            <button type="button" class="btn btn-outline-primary" onclick="window.open('https://clnoiny.github.io/pro_no2_mini/')">보러가기</button>
                         </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
                         <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
@@ -342,10 +360,9 @@
                         </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
 
                         <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                            <h4 class="mb-4">Capture every moments and share it to all your friendss</h4>
-                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
-                            <button type="button" class="btn btn-outline-primary" href="https://clnoiny.github.io/pro_no1/
-                            ">FEATURES</button>
+                            <h4 class="mb-4">오프화이트 X 나이키<br>조던1 홈페이지</h4>
+                            <p>오프화이트와 나이키가 콜라보하여 출시된 운동화, 조던1을 판매, 소개하는 홈페이지입니다. 운동화라는 특성과 제품의 디자인이 잘 드러날 수 있도록 어두운 배경과 푸른 빛을 적극적으로 활용하였습니다.</p>
+                            <button type="button" class="btn btn-outline-primary" onclick="window.open('https://clnoiny.github.io/pro_no1/');">보러가기</button>
                         </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
                     </div><!--/ .featurettes-item -->
@@ -358,38 +375,39 @@
 
 </section><!--프로젝트1 끝-->
 
-<!-- Portfolio Section -->
+<!-- 포트폴리오 시작 -->
 <section id="portfolio" class="bg-white">
     <div class="container">
         <div class="section-content">
-            <!-- Section Title -->
+            <!-- 포트폴리오 제목 시작 -->
             <div class="title-wrap">
-                <h2 class="section-title">Our <b>Awesome</b> Works</h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
+                <h2 class="section-title">My own <b>Colorful</b> Works.</h2>
+                <p class="section-sub-title">저만의 색이 담긴 작업물들입니다.<br>다양한 카드뉴스, 배너, 엽서 등을 직접 제작하였으니 예쁘게 봐주세요 :)</p>
             </div>
-            <!-- End of Section Title -->
+            <!-- 포트폴리오 제목 끝 -->
             <div class="row">
                 <!-- Portfolio Holder -->
                 <div class="col-md-12 portfolio-holder mt-3">
                     <!-- Btn Filter -->
                     <div class="filter-button-group btn-filter d-flex justify-content-center">
                         <a tabindex="0" class="is-checked" data-filter="*">Show All</a>
-                        <a tabindex="0" data-filter=".minimalism">Minimalism</a>
-                        <a tabindex="0" data-filter=".vintage">Vintage</a>
-                        <a tabindex="0" data-filter=".creative">Creative</a>
+                        <a tabindex="0" data-filter=".Banner">Banner</a>
+                        <a tabindex="0" data-filter=".Cardnews">Card News</a>
+                        <a tabindex="0" data-filter=".Poster">Poster</a>
+                        <a tabindex="0" data-filter=".Post">Post Card</a>
                     </div>
                     <!-- End of Btn Filter -->
                     <!-- Portfolio Content -->
                     <div class="grid-portfolio">
                         <div class="grid-sizer"></div>
                         <div class="gutter-sizer"></div>
-                        <!-- Portfolio Item -->
-                        <div class="grid-item minimalism" data-aos="fade-up">
+                        <!-- 배스킨라빈스 배너 -->
+                        <div class="grid-item Banner" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-1.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/baskin-bn.jpg" alt="배스킨라빈스 배너" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-1.jpg" title="Photo-1">
+                                        <a class="img-pop" data-rel="lightcase" href="img/baskin-bn.jpg" title="배스킨라빈스 배너">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -397,20 +415,20 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Camera</h4>
+                                        <h4>배스킨라빈스 배너</h4>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item vintage" data-aos="fade-up">
+                        <!-- End of 배스킨라빈스 배너 -->
+                        <!-- 카드뉴스 -->
+                        <div class="grid-item Cardnews" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-6.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/cardnews.jpg" alt="카드뉴스" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-6.jpg" title="Ship">
+                                        <a class="img-pop" data-rel="lightcase" href="img/cardnews.jpg" title="우리 강아지 눈이 너어무 귀여운 이유">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -418,20 +436,20 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Flower</h4>
+                                        <h4>카드뉴스</h4>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item creative grid-item-height" data-aos="fade-up">
+                        <!-- End of 카드뉴스 -->
+                        <!-- 이디야 배너 -->
+                        <div class="grid-item Banner grid-item-height" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/ediya-bn.jpg" alt="이디야 배너" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-2.jpg" title="Tracy Portrait">
+                                        <a class="img-pop" data-rel="lightcase" href="img/ediya-bn.jpg" title="이디야 고객감사 배너">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -439,20 +457,20 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Breakfast</h4>
+                                        <h4>이디야 배너</h4>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item creative" data-aos="fade-up">
+                        <!-- End of 이디야 배너 -->
+                        <!-- 헤어배너 오리진 -->
+                        <div class="grid-item Banner" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/hair-origin.jpg" alt="헤어케어 제품 배너" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg" title="Guitar">
+                                        <a class="img-pop" data-rel="lightcase" href="img/hair-origin.jpg" title="헤어케어 제품 배너">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -460,20 +478,20 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Chair</h4>
+                                        <h4>헤어케어 제품 배너</h4>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item vintage" data-aos="fade-up">
+                        <!-- End of 헤어케어 제품 배너 -->
+                        <!-- 가정의 달 배너 -->
+                        <div class="grid-item Banner" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/may-bn.jpg" alt="가정의 달 배너" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-4.jpg" title="Bookself">
+                                        <a class="img-pop" data-rel="lightcase" href="img/may-bn.jpg" title="가정의 달 배너">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -481,13 +499,13 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Hidden Book</h4>
+                                        <h4>가정의 달 배너</h4>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                        <!-- End of Portfolio Item -->
+                        <!-- End of 가정의 달 배너 -->
                         <!-- Portfolio Item -->
                         <div class="grid-item creative" data-aos="fade-up">
                             <div class="grid-item-wrapper">
@@ -517,7 +535,7 @@
         </div>
     </div>
 </section>
-<!-- End of Portfolio Section -->
+<!-- 포트폴리오 끝 -->
 
 <!-- 나를 표현하는 단어들 시작 -->
 <section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
@@ -627,7 +645,7 @@
     </div>
 </section>-->
 <!-- End of Reservation Section -->	<!-- Features Section-->
-<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
+<!-- 불필요해서 지움<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
             <div class="row">
@@ -640,7 +658,7 @@
         </div>
     </div>
 </section>
-<!-- End of Features Section--></div>
+<!-- End of Features Section--><!--</div>-->
 <footer class="mastfoot my-3">
     <div class="inner container">
          <div class="row">
@@ -673,8 +691,10 @@
             
         </div>
     </div>
-</footer>	<!-- External JS -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+</footer>	
+
+<!-- External JS -->
+	<script type="text/javascript" src="js/ajax.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
 	<script src="vendor/select2/select2.min.js "></script>
@@ -683,10 +703,12 @@
 	<script src="vendor/isotope/isotope.min.js"></script>
 	<script src="vendor/lightcase/lightcase.js"></script>
 	<script src="vendor/waypoints/waypoint.min.js"></script>
-	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 <script src="js/unpkg.aos.js"></script>
 	 
 	<!-- Main JS -->
 	<script src="js/app.min.js "></script>
-	<script src="//localhost:35729/livereload.js"></script>
+
+	<!-- 링크 연결 안 됨, 지워도 달라지는 부분 없음
+    <script src="//localhost:35729/livereload.js"></script>-->
 </body>
 </html>
