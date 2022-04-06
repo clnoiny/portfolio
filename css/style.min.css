@@ -28,10 +28,28 @@
 
 /*=============================================*/
 
-
 .my-4 > img {
   width: 50px;
   border-radius: 20%; }
+
+/* 나를 표현하는 단어들 한글 버전 css이고 html에서 지우면서 지웁니다
+.col-md-12 > p {
+  text-align: center;
+  margin-top: -30px; }
+*/
+
+.title-wrap > .section-title {
+  font-family: 'Tommy', sans-serif;
+}
+
+.aos-animate > .section-title {
+  font-family: 'KoPubDotumMedium', sans-serif;
+}
+
+/*적용 안 됐음, 집에 가서 다시 시도*/
+#client > .h2 {
+  font-family: 'Tommy', sans-serif;
+}
 
 /*============사용할 수 있는 툴=================*/
 
@@ -60,7 +78,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'KoPubDotumMedium', sans-serif;
   margin-top: 0; }
 
 .mb-4-1{
@@ -468,7 +486,7 @@ section {
   padding-bottom: 50px; }
 
 .testi-icon {
-  color: #ff00cc; }
+  color: #874fd5; }
 
 .testi-content {
   margin-top: 80px;
@@ -788,11 +806,11 @@ section {
     padding-top: 15px !important;
     padding-bottom: 15px !important; }
   .navbar-transparent .navbar-collapse {
-    background: #ff00cc;
+    background: #e6e6e6;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    /*background: -webkit-linear-gradient(to right, #333399, #ff00cc);*/
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
+    /*background: linear-gradient(to right, #333399, #ff00cc);*/
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px; } }
 
