@@ -26,6 +26,30 @@
   src: url('../font/Retroica.ttf') format('opentype');
 }
 
+/*레페리포인트 White (한글)*/
+@font-face {
+  font-family: 'LeferiPoint-WhiteA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*레페리베이스 Rerular (한글)*/
+@font-face {
+  font-family: 'LeferiBaseType-RegularA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*에스코어드림Lt (한글)*/
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*=============================================*/
 
 .ic-b, .ic-c {
@@ -50,8 +74,9 @@
   font-family: 'Tommy', sans-serif;
 }
 
-.aos-animate > .section-title {
-  font-family: 'KoPubDotumMedium', sans-serif;
+.title-wrap > h2 {
+  font-family: 'Tommy';
+  color: #000
 }
 
 /*적용 안 됐음, 집에 가서 다시 시도*/
@@ -64,17 +89,39 @@
   transform: scaleX(-1);
 }*/
 
+.col-md-4 > ul  {
+  list-style: none;
+  padding-left: 0;
+}
 
+.col-md-4 > ul > li > img {
+  width: 30px;
+  padding-right: 10px;
+}
 
-/*============사용할 수 있는 툴=================*/
+.col-md-4 > p > b, .col-md-4 > h4{
+  font-weight: bold;
+}
+
+.row > p {
+  text-align: center;
+  margin: auto 0;
+}
+
+.shadow > h4 {
+  font-weight: bold;
+}
+
+/*=============================*/
 
 html {
   width: 100%;
   overflow-x: hidden; }
 
 body {
-  font-family: 'KoPubDotumMedium', sans-serif;
-  font-weight: 300; }
+  font-family: 'LeferiPoint-WhiteA';
+  font-weight: 300;  
+}
 
 .logo1{
   font-family: 'Tommy';
@@ -93,16 +140,24 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'KoPubDotumMedium', sans-serif;
+  font-family: 'LeferiPoint-WhiteA';
   margin-top: 0; }
 
+.col-md-4 > h4, .col-md-4 > p {
+  color: #000;
+}
+
+.section-title {
+  font-family: 'Tommy';
+}
+
 .mb-4-1{
-  font-family: 'KoPubDotumMedium', sans-serif;
+  font-family: 'LeferiPoint-WhiteA';
   margin-top: 0;
 }
 
 a {
-  color: #ff00cc;
+  color: #4e12bd;
   transition: all .3s ease-in-out; }
 
 a:focus,
@@ -112,18 +167,17 @@ button:focus {
 .btn:hover,
 a:hover {
   text-decoration: none;
-  color: #333399; }
+  color: #818181; }
 
-/*원래는
-  .imgg {
-  max-width: 100%; } 였지만 인트로의 그라데이션 원이
-  화면이 줄어들 때 원의 크기도 같이 줄어들어 보기 싫게 됨
-  그래서 html의 모든 img 태그에게 class= imgg 달아줌*/
 img{
   width: 100%; }
 
 .bg-fixed {
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(231, 230, 230);
+
+  }
 
 .bg-grey {
   background-color: #f7f8f9; }
@@ -140,7 +194,8 @@ section {
 
 .title-wrap,
 .section-title {
-  text-align: center; }
+  text-align: center;
+}
 
 .shadow {
   box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1) !important; }
@@ -228,7 +283,7 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to right, #333399, #ff00cc);*/
     /* Chrome 10-25, Safari 5.1-6 */
@@ -260,18 +315,18 @@ section {
   border-color: #ff00cc;
   color: #fff; }
   .btn-primary:hover {
-    background-color: #333399;
-    border-color: #333399;
+    background-color: #4e12bd;
+    border-color: #4e12bd;
     color: #fff; }
 
 .btn-outline-primary {
-  color: #fff;
+  color: #000;
   background-color: transparent;
   background-image: none;
-  border-color: #fff; }
+  border-color: #000; }
   .btn-outline-primary:hover {
-    background-color: #333399;
-    border-color: #333399;
+    background-color: #4e12bd;
+    border-color: #4e12bd;
     color: #fff; }
 
 .btn-shadow {
@@ -843,3 +898,10 @@ section {
     font-size: 16px; } }
 
 /*=====  End of RESPONSIVE  ======*/
+
+
+.my-14{width: 600px;}
+.my-15{width: 600px; margin-left: -65%;}
+
+.foot__text{text-align: center;}
+.foot__text span{font-size: 0.5em; line-height: 3; color: #bebebe;}

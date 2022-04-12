@@ -34,8 +34,27 @@
     <link rel="stylesheet" href="css/icon-font.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <script src="js/jquery-3.1.1.min.js"></script>
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script>
+    $(function(){
+        function copyToClipboard(val){
+            var text = document.createElement('textarea');
+            document.body.appendChild(text);
+            text.value = val;
+            text.select();
+            document.execCommand('copy');
+            document.body.removeChild(text);
+        }//copyToClipboard 적용
+
+        $('.mail-a').click(function(){
+            copyToClipboard('navonge@naver.com');
+            alert('클립보드에 복사되었습니다.')
+        }); //클릭시 클립보드로 복사
+    });
+    </script>
 
 </head>
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
@@ -156,6 +175,10 @@
                             <p>디자이너로서 무엇보다 중요한 것은 예술감각과 소통이라고 생각합니다.<br>
                             클라이언트, 또는 팀원들과 소통하며 최선의 결과물을 본인의 예술감각과 능력으로 만들어내는 것.<br>
                             저는 저의 타고난 섬세함과 예리한 시각으로 새로운 것에 대한 도전을 멈추지 않는 디자이너가 되고 싶습니다</p>
+                            <ul>
+                                <li><img src="img/phone-ic.png"><a href="/">01027976099</a></li>
+                                <li><img src="img/email-ic.png"><a href="#" onclick="return false" class="mail-a">navonge@naver.com</a></li>
+                            </ul>
                             <!--<div class="progress mb-3">
                                 <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML5 95%</div>
                             </div>
@@ -175,7 +198,7 @@
 </section>	<!-- 프로필 끝 -->
 
 <!--나의 포부 시작-->
-<section id="testimonial" class="section-padding bg-fixed bg-white" style="background-image: url(img/back-circle.png);">
+<!--<section id="testimonial" class="section-padding bg-fixed bg-white" style="background-image: url(img/back-circle.png);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
             <div class="heading-section text-center">
@@ -185,9 +208,9 @@
             </div>
             <div class="row">
                 <!-- 포부 본문 시작 -->
-                <div class="testi-content testi-carousel owl-carousel">
+                <!-- <div class="testi-content testi-carousel owl-carousel">
                     <!--1번-->
-                    <div class="testi-item text-center">
+                    <!--<div class="testi-item text-center">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
                         <h4 class="testi-text">소통하며 최선의 결과물을 만들어내는 디자이너가 되고 싶습니다.</h4>
                         <div class="testi-meta-inner d-flex justify-content-center align-items-center">
@@ -202,7 +225,7 @@
                         
                     </div>
                     <!--2번-->
-                    <div class="testi-item text-center">
+                    <!--<div class="testi-item text-center">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
                         <h4 class="testi-text">보는 이들의 마음을 이끌어내는 디자이너가 되고 싶습니다</h4>
                         <div class="testi-meta-inner d-flex justify-content-center align-items-center">
@@ -216,7 +239,7 @@
                         </div>
                     </div>
                     <!--3번-->
-                     <div class="testi-item text-center">
+                     <!--<div class="testi-item text-center">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
                         <h4 class="testi-text">설득력 있는 예술을 하는 디자이너가 되고 싶습니다.
                         </h4>
@@ -232,7 +255,7 @@
                     </div>
                 </div>
                 <!--포부 본문 끝-->
-            </div>
+            <!--</div>
         </div>
     </div>
 </section><!--나의 포부 끝-->
@@ -244,7 +267,7 @@
             <!-- Section Title -->
             <div class="title-wrap mb-5" data-aos="fade-up">
                 <h2 class="section-title">
-                    저는 이런 툴들을 활용할 수 있어요 :)
+                    I Can Use These Tools.
                 </h2>
                 <!--<p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>-->
             </div>
@@ -323,7 +346,7 @@
 <!--다룰 수 있는 툴 끝-->
 
 <!--미니 프로젝트 시작-->
-<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/prj-bg.png);">
+<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/prj-circle1.png); background-size: 50%; background-position: right bottom;">
 
     <div id="web-project" class="container">
         <div class="section-content">
@@ -332,13 +355,20 @@
                     <div class="row align-items-center text-white">
 
                         <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
-                            <h4 class="mb-4">사랑과 평화<br>어린이집<br>홈페이지</h4>
-                            <p>기존의 '기아대책' 사이트를 어린이집이라는 주제로 변경하여 리뉴얼, 재구성한 홈페이지입니다. 어린이집의 분위기가 잘 느껴질 수 있도록 노란색과 베이지색을 깔끔한 화이트와 함께 배색했습니다.</p>
+                            <h4 class="mb-4">사랑과 평화 어린이집</h4>
+                            <p><b>제작기간</b>
+                            <br>2022.02.24 ~ 2022.03.22</p>
+                            <p><b>컨셉</b>
+                            <br>편안한, 안정적인</p>
+                            <p><b>설명</b>
+                            <br>기존의 '기아대책' 사이트를 어린이집이라는 주제로 변경하여 리뉴얼, 재구성한 홈페이지입니다. 어린이집의 분위기가 잘 느껴질 수 있도록 노란색과 베이지색을 깔끔한 화이트와 함께 배색했습니다.</p>
+                            <p><b>포인트 컬러</b>
+                            <br>베이지, 오렌지</p>
                             <button type="button" class="btn btn-outline-primary" onclick="window.open('https://clnoiny.github.io/pro_no2_mini/')">보러가기</button>
                         </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
                         <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
-                            <img class="my-5" src="img/mini-prj.png" alt="사랑과 평화 홈페이지 썸네일">
+                            <img class="my-14" src="img/mini-pro-pp.png" alt="사랑과 평화 홈페이지 썸네일">
                         </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
 
                     </div><!--/ .featurettes-item -->
@@ -352,7 +382,7 @@
 </section><!--미니 프로젝트 끝-->
 
 <!--프로젝트1 시작-->
-<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/prj-bg.png);">
+<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/prj-circle2.png); background-size: 50%; background-position: left bottom;">
 
     <div class="container">
         <div class="section-content">
@@ -361,13 +391,19 @@
                     <div class="row align-items-center text-white">
 
                         <div class="col-md-4 offset-md-2 offset-md-right-2 col-sm-6" data-aos="flip-right">
-                            <a href="https://clnoiny.github.io/pro_no1/
-                            "><img class="my-5" src="img/nike-prj.png" alt="나이키 홈페이지 썸네일"></a>
+                            <img class="my-15" src="img/nike-pro-pp.png" alt="나이키 홈페이지 썸네일">
                         </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
 
-                        <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                            <h4 class="mb-4">오프화이트 X 나이키<br>조던1 홈페이지</h4>
-                            <p>오프화이트와 나이키가 콜라보하여 출시된 운동화, 조던1을 판매, 소개하는 홈페이지입니다. 운동화라는 특성과 제품의 디자인이 잘 드러날 수 있도록 어두운 배경과 푸른 빛을 적극적으로 활용하였습니다.</p>
+                        <div class="col-md-4 col-sm-6 " data-aos="fade-right">
+                            <h4 class="mb-4">오프화이트 X 나이키 조던1</h4>
+                            <p><b>제작기간</b>
+                            <br>2022.02.14 ~ 2022.03.15</p>
+                            <p><b>컨셉</b>
+                            <br>스포티한, 트렌디한</p>
+                            <p><b>설명</b>
+                            <br>오프화이트와 나이키가 콜라보하여 출시된 운동화, 조던1을 판매, 소개하는 홈페이지입니다. 운동화라는 특성과 제품의 디자인이 잘 드러날 수 있도록 어두운 배경과 푸른 빛을 적극적으로 활용하였습니다.</p>
+                            <p><b>포인트 컬러</b>
+                            <br>블루, 오렌지</p>
                             <button type="button" class="btn btn-outline-primary" onclick="window.open('https://clnoiny.github.io/pro_no1/');">보러가기</button>
                         </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
@@ -614,7 +650,7 @@
                 <div class="col-md-12">
                     <!-- Section Title -->
                     <div class="title-wrap mb-5">
-                        <h2>Words <span> Express</span> Me</h2>
+                        <h2>Words Express Me.</h2>
                     </div>
                     <!-- 한글로 한 번 넣어봤는데 푸터에 이상한 영향을 줘서 뺐습니다.<p>나를 표현하는 단어들</p>-->
                     <!-- End of Section Title -->
@@ -623,23 +659,22 @@
                 <div class="col-md-12 client-holder">
                     <div class="client-slider owl-carousel">
                         <div class="client-item">
-                            <p>사랑</p>
-                            <!--<img class="img-responsive" src="img/client.png" alt=" ">-->
+                            <img class="img-responsive" src="img/love.png" alt="사랑">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/faith.png" alt="소망">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/peace.png" alt="평화">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/delicacy.png" alt="섬세">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/unique.png" alt="개성">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/purple.png" alt="보라">
                         </div>
                     </div>
                     <!-- End of Client Holder -->
@@ -735,14 +770,16 @@
     푸터에는 전화번호랑 이메일만 넣고싶은데, 본래의 copyright를 빼도 될까요?-->
 <footer class="mastfoot my-3">
     <div class="inner container">
-         <div class="row">
+        <p class="foot__text"><span>&copy; 2019 Roxy. Design by GetTemplates.</span><br>
+            본 사이트는 개인 포트폴리오 사이트로 상업적 목적이 아닙니다.<br>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다</p>
+        <!--<div class="row">
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
          		
          	</div>
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
          		<p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
          	</div>
-           
+                       
             <div class="col-lg-4 col-md-12">
             	<nav class="nav nav-mastfoot justify-content-center">
 	                <a class="nav-link" href="#">
@@ -761,9 +798,10 @@
 	                	<i class="fab fa-youtube"></i>
 	                </a>
 	            </nav>
-            </div>
+            </div>-->
             
         </div>
+        
     </div>
 </footer>	
 
