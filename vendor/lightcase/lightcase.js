@@ -733,14 +733,26 @@
 			});
 
 			_self.objects.contentInner.css({
-				'width': $object.outerWidth(),
+				// 'width': $object.outerWidth(), 이미지 꽉차도록 사이즈 삭제
 				'height': $object.outerHeight(),
-				'max-width': '100%'
+				'max-width': '100%',
+				'overflow-y': 'scroll',
 			});
 
 			_self.objects.case.css({
-				'width': _self.objects.contentInner.outerWidth(),
+				// 'width': _self.objects.contentInner.outerWidth(),
+				
+				//'width': 80+'%', js에서 감싸는 div 넓이 조절 가능
 				'max-width': '100%'
+			});
+
+			//미디어쿼리 가능하게 css로 클래스 추가
+			_self.objects.case.addClass('lightcase-case-css');
+
+			//img 사이즈 추가
+			_self.objects.contentInner.find('img').css({
+				'max-width': '100%',
+				'max-height': 'none',
 			});
 
 			// Adjust margin

@@ -186,6 +186,7 @@
   line-height: 1.5;
   text-align: left;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
 }
 @media screen and (max-width: 640px) {
   /* line 16, ../scss/components/modules/_case.scss */
@@ -284,7 +285,7 @@ html[data-lc-type=inline] #lightcase-content .lightcase-contentInner, html[data-
 /* line 82, ../scss/components/modules/_content.scss */
 html[data-lc-type=image] #lightcase-content .lightcase-contentInner {
   position: relative;
-  overflow: hidden !important;
+  /*overflow: hidden !important;*/
 }
 @media screen and (max-width: 640px) {
   /* line 91, ../scss/components/modules/_content.scss */
