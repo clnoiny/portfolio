@@ -284,6 +284,7 @@ html[data-lc-type=inline] #lightcase-content .lightcase-contentInner, html[data-
 
 /* line 82, ../scss/components/modules/_content.scss */
 html[data-lc-type=image] #lightcase-content .lightcase-contentInner {
+  height: 80vh !important;
   position: relative;
   /*overflow: hidden !important;*/
 }
