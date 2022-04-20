@@ -301,6 +301,10 @@ section {
 /*==============================
 =            BUTTON            =
 ==============================*/
+.btn2 {
+  margin-left: 5px;
+}
+
 .btn {
   font-size: 14px;
   font-weight: 600;
@@ -324,10 +328,10 @@ section {
   background-color: transparent;
   background-image: none;
   border-color: #000; }
-  .btn-outline-primary:hover {
-    background-color: #4e12bd;
-    border-color: #4e12bd;
-    color: #fff; }
+.btn-outline-primary:hover {
+  background-color: #4e12bd;
+  border-color: #4e12bd;
+  color: #fff; }
 
 .btn-shadow {
   box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15); }
